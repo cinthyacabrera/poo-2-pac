@@ -82,14 +82,8 @@
                         <form action="#" method="post">
                             <div class="row">
                                 <div class="col-12 mb-4 ">
-                                    <img id ="foto-perfil "style="width:200px; height=200px;" class ="img-fluid" src = "img/bg-img/arce.jpg">
+                                    <img id ="foto-perfil "style="width:200px; height=200px;" class ="img-fluid " src = "img/bg-img/arce.jpg">
                                     <hr>
-                                    <div class="col-md-12 row botones-registro">
-                                        <button data-toggle="modal" data-target="#formulario-producto" class="col-md-4 mb-3 form-control" type="button" >registroproducto</button>
-                                        <button data-toggle="modal" data-target="#formulario-promocion" class="col-md-4 mb-3 form-control" type="button" >registropromociones</button>
-                                        <button data-toggle="modal" data-target="#formulario-sucursal" class="col-md-4 mb-3 form-control" type="button" >registrosucursal</button>
-                                    </div>
-                                            
                                 </div>
                             </div>
                         </form>
@@ -98,29 +92,39 @@
                 <div class="col-12 col-md-6">
                     <div class="checkout_details_area mt-50 clearfix">
                         <form action="#" method="post">
-                                <div class="row">
-
+                            <div  class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label  type="text" class="form-control" id="first_name">Nombre </label>
+                                    <label  type="text" class="form-control" >Nombre </label>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label  class="form-control" id="last_name">descripcion</label>
+                                    <label  class="form-control" >descripcion</label>
                                 </div>
                                 <div class="col-12 mb-4">
-                                     <label class="form-control" id="email_address">Email</label>
+                                     <label class="form-control" >Email</label>
                                 </div>
-
                                 <div class="col-12 mb-3">
-                                    <label class="form-control mb-3" id="street_address" >Direccion </label>
+                                    <label class="form-control mb-3" >Direccion </label>
                                 </div>
+                                
+                                <div id="perfil-empresa"></div>
                                 <div class="col-md-12 row botones-registro">
                                     <a href="#"><button class="form-control" type="button" >ficha promocional</button></a>
                                 </div>
-
                             </div>
                         </form>
                     </div>
                 </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                         <div class="col-12 mb-4 ">
+                             <div class="col-12 row botones-registro">
+                                <button data-toggle="modal" data-target="#formulario-producto" class="col-md-4 mb-3 form-control" type="button" >registroproducto</button>
+                                <button data-toggle="modal" data-target="#formulario-promocion" class="col-md-4 mb-3 form-control" type="button" >registropromocion</button>
+                                <button data-toggle="modal" data-target="#formulario-sucursal" class="col-md-4 mb-3 form-control" type="button" >registrosucursal</button>
+                             </div>                   
+                        </div>
+                    </div>
+                 </div>
                 <div class="col-12 mb-3">
                     <label for="country">personas a las q sigues</label>
                     <select class="w-100" id="country">
@@ -403,6 +407,7 @@
     <script src="js/classy-nav.min.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script src="js/controladorempresa.js"></script>
 
 </body>
 

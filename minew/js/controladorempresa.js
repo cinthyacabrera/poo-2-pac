@@ -3,7 +3,7 @@ var localStorage = window.localStorage;
 /*llenarTabla();
 //Leer toda la informaci??n del localStorage
 function llenarTabla(){
-  document.getElementById('tabla-registros').innerHTML = ""; //Limpiar la tabla
+  document.getElementById('perfil-empresa').innerHTML = ""; //Limpiar la tabla
   for (let i=0;i<localStorage.length;i++){
       console.log(localStorage.key(i));
       let datoempre = JSON.parse(localStorage.getItem(localStorage.key(i))); //Convertir de cadena a JSON
@@ -35,6 +35,9 @@ function registrarEmpresa(){
     console.log("Llave a guardar: "+ key);
     localStorage.setItem( key,JSON.stringify(datoempre));
     /*anexarRegistroTabla(datoempre);*/
+
+
+location.href="perfilempresa.html";
 }
 function validarCampoVacio(id){
   let resultado = (document.getElementById(id).value=='')?false:true;
@@ -50,6 +53,47 @@ function marcarInput(id,valido){
       document.getElementById(id).classList.add('is-invalid');        
   } 
 }
+
+
+
+
+
+
+/*
+function anexarRegistroTabla(datoempre,id){
+  document.getElementById('perfil-empresa').innerHTML+=
+`<div class="col-12 mb-4 ">
+<img id ="foto-perfil "style="width:200px; height=200px;" class ="img-fluid " src = "${datoempre.foto}">
+
+</div>
+<form action="#" method="post">
+<div  class="row">
+
+<div class="col-md-6 mb-3">
+    <label  type="text" class="form-control" placeholder="nombre">${datoempre.EmpreName}</label>
+</div>
+<div class="col-md-6 mb-3">
+    <label  class="form-control" placeholder="descripcion">${datoempre.PaisName},${datoempre.facebook}</label>
+</div>
+<div class="col-12 mb-4">
+     <label class="form-control" placeholder="email">${datoempre.email}</label>
+</div>
+
+<div class="col-12 mb-3">
+    <label class="form-control mb-3" placeholder="direccion">${datoempre.direccion}</label>
+</div>
+<div id="perfil-empresa"></div>
+
+
+<div class="col-md-12 row botones-registro">
+    <a href="#"><button class="form-control" type="button" onclick="eliminar(${id})" >ficha promocional</button></a>
+</div>
+
+</div>
+</form>`;
+}
+*/
+
 
 
 
@@ -76,6 +120,4 @@ function eliminar(id){
   llenarTabla();
 }
 */
-
-
 

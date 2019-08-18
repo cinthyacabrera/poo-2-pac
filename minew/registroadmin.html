@@ -206,7 +206,7 @@ var campoadmin =[
   {campo:'email-admin',valido:false},
   {campo:'direccion-admin',valido:false},
 ];
-  function registrarAdmin(){
+function registrarAdmin(){
   for (let i=0;i<campoadmin.length;i++)
       campoadmin[i].valido = validarCampoVacio(campoadmin[i].campo);  
   for (let i=0;i<campoadmin.length;i++)
@@ -224,6 +224,9 @@ var campoadmin =[
     console.log("Llave a guardar: "+ key);
     localStorage.setItem( key,JSON.stringify(datoadmin));
     /*anexarRegistroTabla(datoadmin);*/
+
+location.href="perfiladmin.html";
+
 }
 function validarCampoVacio(id){
   let resultado = (document.getElementById(id).value=='')?false:true;

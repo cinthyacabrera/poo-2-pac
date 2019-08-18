@@ -40,6 +40,7 @@ var campocliente =[
       console.log("Llave a guardar: "+ key);
       localStorage.setItem( key,JSON.stringify(datocliente));
       /*anexarRegistroTabla(datocliente);*/
+  location.href="perfil.html";
   }
   
   function validarCampoVacio(id){
