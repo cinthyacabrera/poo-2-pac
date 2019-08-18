@@ -347,6 +347,9 @@ background-color: #d66000;
     background-color: #6e2f1f;
     border-color: #bf5c00;
 }
+.right-side-cart-area .cart-content .cart-list .single-cart-item .product-image .cart-item-desc .size, .right-side-cart-area .cart-content .cart-list .single-cart-item .product-image .cart-item-desc .color {
+    margin-bottom: -25px;
+}
    
 
 
