@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Daffodil</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/core-img/favicon.ico">
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="css/mio.css">
+</head>
+
+<body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header_area">
+        <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar" style="height: 60px;" id="essenceNav">
+                <!-- Logo -->
+                <a class="nav-brand" href="index.html" style="width: 153px; height: 49px;" >
+                    <img src="img/core-img/directotomato.png" alt=""></a>
+                <!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div>
+                <!-- Menu -->
+                <div class="classy-menu" >
+                   
+                    <!-- Nav Start -->
+                    <div class="classynav" style="padding-top:0px" >
+                        <ul>
+                            <li><a href="catalago.html">catalago</a>
+                               
+                            </li>
+                            <li><a href="#">Registro</a>
+                                <ul class="dropdown">
+                                    <li><a href="registroempresa.html">Empresa</a></li>
+                                    <li><a href="registrousuario.html">Cliente</a></li>
+                                    <li><a href="registroadmin.html">Administrador</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="registrate.html">login</a></li>
+                            <li><a href="acercade.html">Acerca de</a></li>
+                        </ul>
+                    </div>
+                    <!-- Nav End -->
+                </div>
+            </nav>
+
+            <!-- Header Meta Data -->
+            <div class="header-meta d-flex clearfix justify-content-end">
+                <!-- Search Area -->
+                <div class="search-area">
+                    <form action="#" method="post">
+                        <input type="search" name="search" id="headerSearch" placeholder="Buscar">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                
+                <!-- User Login Info -->
+                <div class="user-login-info">
+                    <a href="#"><img src="img/core-img/user2.svg" alt=""></a>
+                </div>
+               
+            </div>
+
+        </div>
+    </header>
+
+    
+    <div class="checkout_area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="foto">
+                            <div class="cart-page-heading mb-30">
+                                <h5>perfil de Empresa</h5>
+                            </div>
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 mb-4 ">
+                                    <img id ="foto-perfil "style="width:200px; height=200px;" class ="img-fluid" src = "img/bg-img/arce.jpg">
+                                    <hr>
+                                    <div class="col-md-12 row botones-registro">
+                                        <button data-toggle="modal" data-target="#formulario-producto" class="col-md-4 mb-3 form-control" type="button" >registroproducto</button>
+                                        <button data-toggle="modal" data-target="#formulario-promocion" class="col-md-4 mb-3 form-control" type="button" >registropromociones</button>
+                                        <button data-toggle="modal" data-target="#formulario-sucursal" class="col-md-4 mb-3 form-control" type="button" >registrosucursal</button>
+                                    </div>
+                                            
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="checkout_details_area mt-50 clearfix">
+                        <form action="#" method="post">
+                                <div class="row">
+
+                                <div class="col-md-6 mb-3">
+                                    <label  type="text" class="form-control" id="first_name">Nombre </label>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label  class="form-control" id="last_name">descripcion</label>
+                                </div>
+                                <div class="col-12 mb-4">
+                                     <label class="form-control" id="email_address">Email</label>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label class="form-control mb-3" id="street_address" >Direccion </label>
+                                </div>
+                                <div class="col-md-12 row botones-registro">
+                                    <a href="#"><button class="form-control" type="button" >ficha promocional</button></a>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="country">personas a las q sigues</label>
+                    <select class="w-100" id="country">
+                        <option value="">... </option>
+                    </select>
+                </div>
+
+
+                
+                     <!-- carrucel -->
+                <section class="new_arrivals_area section-padding-80 clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center">
+                            <h2>Productos en oferta</h2>
+                        </div>
+ 
+                        <div class="popular-products-slides owl-carousel">
+    
+                            <!-- Single Product 1 -->
+                            <div class="single-product-wrapper">
+                                <!-- Product Image -->
+                                <div class="product-img">
+                                    <img src="img/product-img/1.jpg" alt="">
+                                    
+                                    <!-- Product Badge -->
+                                    <div class="product-badge offer-badge"><span>duracion de la oferta</span></div>
+    
+                                    <!-- Favourite -->
+                                    <div class="product-favourite"><a href="#" class="favme fa fa-heart"></a></div>
+                                </div>
+                                <!-- Product Description1 -->
+                                <div class="product-description"><span>aqui dira la empresa</span>
+                                    <a href="detalledeprod.html"><h6>nombre del producto</h6></a>
+                                    <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
+    
+                                    <!-- Hover Content -->
+                                    <div class="hover-content">
+                                        <!-- agrega al carro -->
+                                        <div class="add-to-cart-btn"><a href="#" class="btn essence-btn">agrega al carro</a></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Single Product 2-->
+                            <div class="single-product-wrapper">
+                                <!-- Product Image -->
+                                <div class="product-img"><img src="img/product-img/2.jpg" alt="">
+                                    
+                                    <!-- Product Badge -->
+                                    <div class="product-badge offer-badge"><span>duracion de la oferta</span> </div>
+    
+                                    <!-- Favourite -->
+                                    <div class="product-favourite"><a href="#" class="favme fa fa-heart"></a> </div>
+                                </div>
+                                <!-- Product Description2 -->
+                                <div class="product-description">
+                                        <span>aqui dira la empresa</span><a href="detalledeprod.html"><h6>nombre del producto</h6></a>
+                                        <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
+        
+                                        <!-- Hover Content -->
+                                        <div class="hover-content">
+                                            <!-- agrega al carro -->
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="btn essence-btn">agrega al carro</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+    
+                            <!-- Single Product 3-->
+                            <div class="single-product-wrapper">
+                                <!-- Product Image -->
+                                <div class="product-img">
+                                    <img src="img/product-img/3.jpg" alt="">
+                                    <!-- Hover Thumb 
+                                    <img class="hover-img" src="img/product-img/product-4.jpg" alt="">-->
+    
+                                    <!-- Product Badge -->
+                                    <div class="product-badge offer-badge">
+                                        <span>duracion de la oferta</span>
+                                    </div>
+    
+                                    <!-- Favourite -->
+                                    <div class="product-favourite">
+                                        <a href="#" class="favme fa fa-heart"></a>
+                                    </div>
+                                </div>
+                                <!-- Product Description3 -->
+                                <div class="product-description">
+                                    <span>nombre de empresa3</span>
+                                    <a href="detalledeprod.html">
+                                        <h6>nombre del producto</h6>
+                                    </a>
+                                    <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
+    
+                                    <!-- Hover Content -->
+                                    <div class="hover-content">
+                                        <!-- agrega al carro -->
+                                        <div class="add-to-cart-btn">
+                                            <a href="#" class="btn essence-btn">agregar al carro</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Single Product 4-->
+                            <div class="single-product-wrapper">
+                                <!-- Product Image -->
+                                <div class="product-img">
+                                    <img src="img/product-img/4.jpg" alt="">
+                                    <!-- Hover Thumb
+                                    <img class="hover-img" src="img/product-img/product-5.jpg" alt=""> -->
+    
+                                    <!-- Product Badge -->
+                                    <div class="product-badge offer-badge">
+                                        <span>duracion de oferta</span>
+                                    </div>
+    
+                                    <!-- Favourite -->
+                                    <div class="product-favourite">
+                                        <a href="#" class="favme fa fa-heart"></a>
+                                    </div>
+                                </div>
+                                <!-- Product Description 4-->
+                                <div class="product-description">
+                                    <span>nombre de la empresa2</span>
+                                    <a href="detalledeprod.html">
+                                        <h6>nombre del producto</h6>
+                                    </a>
+                                    <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
+    
+                                    <!-- Hover Content -->
+                                    <div class="hover-content">
+                                        <!-- agregar al carro -->
+                                        <div class="add-to-cart-btn">
+                                            <a href="#" class="btn essence-btn">agregar al carro</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal producto-->
+<div class="modal fade" id="formulario-producto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nueva producto</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <input placeholder="nombre" id="nombre" type="text" class="form-control">
+                <input placeholder="precio" id="precio" type="text" class="form-control">
+                <input placeholder="descripcion" id="comentarios" type="text" class="form-control">
+              <input placeholder="foto" id="caratula" type="text" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              <button id="btn-guardar" type="button" class="btn btn-primary">Guardar noticia</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal sucursal-->
+<div class="modal fade" id="formulario-sucursal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">sucursal</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <input placeholder="nombre" id="nombre" type="text" class="form-control">
+                <input placeholder="Direccion" id="precio" type="text" class="form-control">
+                <input placeholder="latitud" id="comentarios" type="text" class="form-control">
+                <input placeholder="foto" id="caratula" type="text" class="form-control">
+                <input placeholder="telefono" id="celular" type="text" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              <button id="btn-guardar" type="button" class="btn btn-primary">Guardar noticia</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal promocion-->
+<div class="modal fade" id="formulario-promocion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">promocion</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <select placeholder="articulo" id="producto" class="col-md-6 mb-3  ">
+                    <option>Seleccione un producto</option>
+                </select>
+                <select placeholder="categoria sucursal" id="sucursal" class="col-md-6 mb-3 ">
+                    <option>Seleccione sucursal</option>
+                </select>
+                <input placeholder="descuento en porcentaje" id="porcentaje" type="text" class="form-control">
+                <input placeholder="precio real" id="precio" type="text" class="form-control">
+                <input placeholder="precio oferta" id="oferta" type="text" class="form-control">
+                <input placeholder="fecha inicio" id="inicio" type="date" class="form-control">
+                <input placeholder="fecha fin" id="fin" type="date" class="form-control">
+               
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              <button id="btn-guardar" type="button" class="btn btn-primary">Guardar noticia</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!--Footer Area  -->
+    <footer class="footer_area clearfix">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Widget Area -->
+                    <div class="col-12 text-center">
+                        <div class="single_widget_area d-flex mb-30">
+                            <!-- Logo -->
+                            <div class="footer-logo mr-50">
+                                <a href="#"><img style="width: 153px; height: 49px;" src="img/core-img/directotomato.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row align-items-end">
+    
+                    <!-- Single Widget Area -->
+                    <div class="col-12  text-center">
+                        <div class="single_widget_area">
+                            <div class="footer_social_area">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-5">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Cinthya cabrera</p>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+        
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Classy Nav js -->
+    <script src="js/classy-nav.min.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Daffodil</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/core-img/favicon.ico">
+        <!-- Core Style CSS -->
+        <link rel="stylesheet" href="css/core-style.css">
+        <link rel="stylesheet" href="css/mio.css">
+    </head>
+    
+    <body >
+        <!-- ##### Header Area Start ##### -->
+        <header class="header_area">
+            <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar" style="height: 60px;" id="essenceNav">
+                    <!-- Logo -->
+                    <a class="nav-brand" href="index.html" style="padding-left:5px; margin-right: 70px">
+                        <img src="img/core-img/directotomato.png" style="height: 50px; widows: 150px;" alt=""></a>
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+                    <!-- Menu -->
+                    <div class="classy-menu" >
+                       
+                        <!-- Nav Start -->
+                        <div class="classynav" style="padding-top:0px" >
+                            <ul>
+                                <li><a href="catalago.html">catalago</a>
+                                   
+                                </li>
+                                <li><a href="#">Registro</a>
+                                    <ul class="dropdown">
+                                        <li><a href="registroempresa.html">Empresa</a></li>
+                                        <li><a href="registrousuario.html">Cliente</a></li>
+                                        <li><a href="registroadmin.html">Administrador</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><a href="acercade.html">Acerca de</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+    
+                <!-- Header Meta Data -->
+                <div class="header-meta d-flex clearfix justify-content-end">
+                    <!-- Search Area -->
+                    <div class="search-area">
+                        <form action="#" method="post">
+                            <input type="search" name="search" id="headerSearch" placeholder="Type for search">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                    
+                    <!-- User Login Info -->
+                    <div class="user-login-info">
+                        <a href="#"><img src="img/core-img/user2.svg" alt=""></a>
+                    </div>
+                    
+                </div>
+    
+            </div>
+        </header>
+ 
+    
+
+    <!-- registro -->
+    <div class="checkout_area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ml-lg-auto">
+                    <div class="order-details-confirmation">
+
+                 <div class="cart-page-heading mb-30">
+                            <h2>Ingresa</h2>
+                        </div>
+
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="first_name"><span>*</span></label>
+                                    <input onkeyup="validarEmailEnLinea(this.value)" type="text" class="form-control" id="email" placeholder="correo" value="" required>
+                                    <div class="valid-feedback">Ok</div>
+                                    <div class="invalid-feedback">Campo obligatorio</div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="password"><span>*</span></label>
+                                    <input type="password" class="form-control" id="password" placeholder="contrasena" value="" required>
+                                    <div class="valid-feedback">Ok</div>
+                                    <div class="invalid-feedback">Campo obligatorio</div>
+                                </div>
+                            </div>
+                        </form>
+                        <br><a onclick="registrarUsuario()" href="index.html" class="btn essence-btn">entrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Area  -->
+    <footer class="footer_area clearfix">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Widget Area -->
+                    <div class="col-12 text-center">
+                        <div class="single_widget_area d-flex mb-30">
+                            <!-- Logo -->
+                            <div class="footer-logo mr-50">
+                                <a href="#"><img style="width: 153px; height: 49px;" src="img/core-img/directotomato.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row align-items-end">
+    
+                    <!-- Single Widget Area -->
+                    <div class="col-12  text-center">
+                        <div class="single_widget_area">
+                            <div class="footer_social_area">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-5">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Cinthya cabrera</p>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+        
+    
+        <!-- jQuery (Necessary for All JavaScript Plugins) -->
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <!-- Popper js -->
+        <script src="js/popper.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Plugins js -->
+        <script src="js/plugins.js"></script>
+        <!-- Classy Nav js -->
+        <script src="js/classy-nav.min.js"></script>
+        <!-- Active js -->
+        <script src="js/active.js"></script>
+        <script src="js/controlador.js"></script>
+    
+    </body>
+    
+    </html>

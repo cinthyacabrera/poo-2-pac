@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Daffodil</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/core-img/favicon.ico">
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="css/mio.css">
+          <!-- Custom CSS -->
+       
+   
+</head>
+
+<body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header_area">
+        <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar" style="height: 60px;" id="essenceNav">
+                <!-- Logo -->
+                <a class="nav-brand" href="index.html" style="width: 153px; height: 49px;" >
+                    <img src="img/core-img/directotomato.png" alt=""></a>
+                <!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div>
+                <!-- Menu -->
+                <div class="classy-menu" >
+                   
+                    <!-- Nav Start -->
+                    <div class="classynav" style="padding-top:0px" >
+                        <ul>
+                            <li><a href="catalago.html">catalago</a>
+                               
+                            </li>
+                            <li><a href="#">Registro</a>
+                                <ul class="dropdown">
+                                    <li><a href="registroempresa.html">Empresa</a></li>
+                                    <li><a href="registrousuario.html">Cliente</a></li>
+                                    <li><a href="registroadmin.html">Administrador</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="registrate.html">login</a></li>
+                            <li><a href="acercade.html">Acerca de</a></li>
+                        </ul>
+                    </div>
+                    <!-- Nav End -->
+                </div>
+            </nav>
+
+            <!-- Header Meta Data -->
+            <div class="header-meta d-flex clearfix justify-content-end">
+                <!-- Search Area -->
+                <div class="search-area">
+                    <form action="#" method="post">
+                        <input type="search" name="search" id="headerSearch" placeholder="Type for search">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                
+                <!-- User Login Info -->
+                <div class="user-login-info">
+                    <a href="#"><img src="img/core-img/user2.svg" alt=""></a>
+                </div>
+               
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ##### Right Side Cart Area ##### -->
+    <div class="cart-bg-overlay"></div>
+
+    <div class="container">
+            <br><label class="btn btn-primary btn-circle">registro admin</label>
+            
+            <form role="form">
+            <div class="contenedor">
+                <div class="row setup-content" id="step-1">
+                    <br>
+                    <div class="col-md-6 mb-3 form-group">
+                        <label class="control-label">USUARIO *</label>
+                        <input id="user-admin" maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Name"  />
+                    </div>
+                    <div class="col-md-6 mb-3 form-group">
+                        <label class="control-label">CONTRASENA *</label>
+                        <input id="pass-admin" maxlength="100" type="text" required="required" class="form-control" placeholder="password" />
+                    </div>
+                    
+                    <div class="form-group col-md-6 mb-3">
+                        <label class="control-label"> NOMBRE COMPLETO *</label>
+                        <input id="first-admin" maxlength="200" type="text" required="required" class="form-control" placeholder="Company Name" />
+                    </div>
+                    <div class="col-md-6 mb-3 form-group">
+                        <label class="control-label custom-file-label"  for="validatedCustomFile" placeholder="foto de tu logo">Elegir tu foto *</label><br>
+                        <input maxlength="200"  class="custom-file-input" id="foto-admin" type="file" required="required" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label class="control-label">Email *</label>
+                        <input id="email-admin"  maxlength="200" type="text" required="required" class="form-control" placeholder="Email"  />
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label class="control-label">Direccion(LUGAR)</label>
+                        <input id="direccion-admin" maxlength="200" type="text" required="required" class="form-control" placeholder="Address"  />
+                    </div>
+                    
+                    <button onclick="registrarAdmin()" class="btn btn-primary btn-lg pull-right" href="" type="button">Finish!</button>
+                </div>
+                <!--<section class="col-md-6">
+                        <table class="table table-striped table-hover">
+                          <thead>
+                            <tr>
+                              <th>user</th>
+                              <th>pass-admin</th>
+                              <th>first-admin</th>
+                              <th>foto-admin</th>
+                              <th>email-admin</th>
+                              <th>direccion-admin</th>
+                              <th>eliminar</th>
+                            </tr>   
+                          </thead>
+                          <tbody id="tabla-registros"></tbody>
+                        </table>
+                </section>  -->
+            </div>
+            </form>
+    </div>
+            
+   
+    <!--Footer Area  -->
+    <footer class="footer_area clearfix">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Widget Area -->
+                    <div class="col-12 text-center">
+                        <div class="single_widget_area d-flex mb-30">
+                            <!-- Logo -->
+                            <div class="footer-logo mr-50">
+                                <a href="#"><img style="width: 153px; height: 49px;" src="img/core-img/directotomato.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row align-items-end">
+    
+                    <!-- Single Widget Area -->
+                    <div class="col-12  text-center">
+                        <div class="single_widget_area">
+                            <div class="footer_social_area">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-5">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Cinthya cabrera</p>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+        
+    
+        <!-- jQuery (Necessary for All JavaScript Plugins) -->
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <!-- Popper js -->
+        <script src="js/popper.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Plugins js -->
+        <script src="js/plugins.js"></script>
+        <!-- Classy Nav js -->
+        <script src="js/classy-nav.min.js"></script>
+        <!-- Acitve js -->
+        <script src="js/active.js"></script>
+        <!-- Active js -->
+        
+
+        <script>
+var localStorage = window.localStorage;
+/*llenarTabla();
+//Leer toda la informaci??n del localStorage
+function llenarTabla(){
+  document.getElementById('tabla-registros').innerHTML = ""; //Limpiar la tabla
+  for (let i=0;i<localStorage.length;i++){
+      console.log(localStorage.key(i));
+      let datoadmin = JSON.parse(localStorage.getItem(localStorage.key(i))); //Convertir de cadena a JSON
+      anexarRegistroTabla(datoadmin, localStorage.key(i));
+  }
+}
+*/
+var campoadmin =[
+  {campo:'user-admin',valido:false},
+  {campo:'pass-admin',valido:false},
+  {campo:'first-admin',valido:false},
+  {campo:'foto-admin',valido:false},
+  {campo:'email-admin',valido:false},
+  {campo:'direccion-admin',valido:false},
+];
+  function registrarAdmin(){
+  for (let i=0;i<campoadmin.length;i++)
+      campoadmin[i].valido = validarCampoVacio(campoadmin[i].campo);  
+  for (let i=0;i<campoadmin.length;i++)
+  if (!campoadmin[i].valido) return;
+  let datoadmin = {
+        useradmin: document.getElementById('user-admin').value,
+        Passad: document.getElementById('pass-admin').value,
+        fisrtad: document.getElementById('first-admin').value,
+        fotoad: document.getElementById('foto-admin').value,
+        emailad: document.getElementById('email-admin').value,
+        direccionad: document.getElementById('direccion-admin').value
+    }
+    let key = localStorage.key(localStorage.length-1)==null?0:parseInt(localStorage.key(localStorage.length-1))+1;
+
+    console.log("Llave a guardar: "+ key);
+    localStorage.setItem( key,JSON.stringify(datoadmin));
+    /*anexarRegistroTabla(datoadmin);*/
+}
+function validarCampoVacio(id){
+  let resultado = (document.getElementById(id).value=='')?false:true;
+  marcarInput(id, resultado);
+  return resultado;
+}
+function marcarInput(id,valido){
+  if (valido){
+      document.getElementById(id).classList.remove('is-invalid');
+      document.getElementById(id).classList.add('is-valid');
+  } else{
+      document.getElementById(id).classList.remove('is-valid');
+      document.getElementById(id).classList.add('is-invalid');        
+  } 
+} 
+/*
+ function anexarRegistroTabla(datoempre,id){
+    document.getElementById('tabla-registros').innerHTML+=
+        `<tr>
+            <th>${datoempre.useradmin}</th>
+            <th>${datoempre.Passad}</th>
+            <th>${datoempre.fisrtad}</th>
+            <th>${datoempre.fotoad}</th>
+            
+            <th>${datoempre.emailad}</th>
+            <th>${datoempre.direccionad}</th>
+    
+            
+            <td><button type="button" onclick="eliminar(${id})"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>`;  
+}
+function eliminar(id){
+  console.log("Eliminar registro con id: " + id);
+  localStorage.removeItem(id);
+  llenarTabla();
+}
+*/
+        </script>
+    </body>
+    
+    </html>
