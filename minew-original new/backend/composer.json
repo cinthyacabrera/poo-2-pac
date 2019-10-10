@@ -1,0 +1,13 @@
+{
+    "name": "dell/conexion-firebase",
+    "description": "conexion-a-firebase",
+    "authors": [
+        {
+            "name": "cinthya",
+            "email": "ccinthya375@gmail.com"
+        }
+    ],
+    "require": {
+        "kreait/firebase-php": "4.32"
+    }
+}

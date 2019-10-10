@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Daffodil</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/core-img/favicon.ico">
+        <!-- Core Style CSS -->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/core-style.css">
+        <link rel="stylesheet" href="css/mio.css">
+        <script src="https://kit.fontawesome.com/4afeac0916.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- ##### Header Area Start ##### -->
+    <!-- ##### Header Area Start ##### -->
+    <header class="header_area">
+        <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar" style="height: 60px;" id="essenceNav">
+                <!-- Logo -->
+                <a class="nav-brand" href="index.html" style="padding-left:5px; margin-right: 70px">
+                    <img src="img/core-img/directotomato.png" style="height: 50px; widows: 150px;" alt=""></a>
+                
+                <!-- Menu -->
+                <div class="classy-menu" >
+                    
+                    <!-- Nav Start -->
+                    <div class="classynav" style="padding-top:0px" >
+                        <ul>
+                            <li><a href="catalago.html">catalago</a></li>
+                            <li><a href="#">Registro</a>
+                                <ul class="dropdown">
+                                    <li><a href="registroempresa.html">Empresa</a></li>
+                                    <li><a href="registrousuario.html">Cliente</a></li>
+                                    <li><a href="registroadmin.html">Administrador</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="registrate.html">login</a></li>
+                            <li><a href="acercade.html">Acerca de</a></li>
+                        </ul>
+                    </div>
+                    <!-- Nav End -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <!-- ##### Right Side Cart Area ##### -->
+        <div class="cart-bg-overlay"></div>
+
+        <div class="container">
+            <!--section id="contenido-informativo" class="col-md-12 d-none d-sm-block">
+                <table class="table table-striped table-hover table-responsive">
+                    <thead>
+                    <tr>
+                        
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>direccion</th>
+                        <th>facebookUser</th>
+                        <th>······</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tabla-registros"></tbody>
+                </table>
+                <div id="loading-tabla" class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                </section-->
+
+                    <br><a class="btn btn-primary btn-circle">Registro Usuario</a>
+                
+                <form role="form" id="formulario" >
+                <div class="contenedor">
+                    <div class="row setup-content" id="step-1">                
+                                <br>
+                                
+                                
+                                <div class="form-group col-md-6 mb-3 ">
+                                    <label class="control-label">PRIMER NOMBRE  *</label>
+                                    <input name="firstName" id="firstName" maxlength="200" type="text" required="required" class="form-control" placeholder="Company Name" />
+                                </div>
+                                <div class="form-group col-md-6 mb-3 ">
+                                    <label class="control-label">SEGUNDO NOMBRE*</label>
+                                    <input name="lastName" id="lastName" maxlength="200" type="text" required="required" class="form-control" placeholder="country"  />
+                                </div>
+                                <div class="form-group col-md-6 mb-3 ">
+                                    <label class="control-label">CONTRASENA *</label>
+                                    <input name="password" id="password" maxlength="100" type="password" required="required" class="form-control" placeholder="password" />
+                                </div>
+                                <div class="form-group col-md-6 mb-3 ">
+                                    <label class="control-label">Email *</label>
+                                    <input name="email" id="email"  maxlength="200" type="text" required="required" class="form-control" placeholder="Email"  />
+                                </div>
+                                
+                                <div class="form-group col-md-6 mb-3 ">
+                                    <label class="control-label">Direccion(LUGAR)</label>
+                                    <input name="direccion" id="direccion" maxlength="200" type="text" required="required" class="form-control" placeholder="Address"  />
+                                </div>
+                                        
+                                <!--div class="form-group col-md-6 mb-3 custom-file">
+                                    <label class="control-label custom-file-label"  for="validatedCustomFile" placeholder="foto de tu logo">Elegir tu foto *</label>
+                                    <input maxlength="200"  class="custom-file-input" name="foto" id="foto" type="file" required="required" class="form-control" placeholder="Company Name" />
+                                </div-->
+                                <div class="form-group col-md-6 mb-3">
+                                    <label class="control-label">RED FACEBOOK *</label>
+                                    <input name="facebook" id="facebook" maxlength="200" type="text"  class="form-control" placeholder="Company Name" />
+                                </div>
+                                <button id="btn-registrar" onclick="registrarUsuario()" type="button" class="btn btn-primary">Registrar</button>
+                                <button id="btn-actualizar" onclick="actualizarUsuario()" type="button" class="btn btn-primary" style="display:none;">Actualizar</button>
+                                <button id="btn-limpiar" onclick="limpiarFormulario()" type="button" class="btn btn-primary" style="display:none;">limpiar</button>
+                                <input id="key" type="hidden">
+                    
+                    </div>
+                </div>
+                </form>
+        </div>
+                
+        <!--Footer Area  -->
+        <footer class="footer_area clearfix">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Widget Area -->
+                        <div class="col-12 text-center">
+                            <div class="single_widget_area d-flex mb-30">
+                                <!-- Logo -->
+                                <div class="footer-logo mr-50">
+                                    <a href="#"><img style="width: 153px; height: 49px;" src="img/core-img/directotomato.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row align-items-end">
+        
+                        <!-- Single Widget Area -->
+                        <div class="col-12  text-center">
+                            <div class="single_widget_area">
+                                <div class="footer_social_area">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row mt-5">
+                        <div class="col-md-12 text-center">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Cinthya cabrera</p>
+                        </div>
+                    </div>
+        
+                </div>
+        </footer>
+            
+        
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Classy Nav js -->
+    <script src="js/classy-nav.min.js"></script>
+    <!-- Acitve js -->
+    <script src="js/active.js"></script>
+    <!-- Active js -->
+    <script src="js/controlador-usuarios.js"></script>
+
+
+        
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Daffodil</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/core-img/favicon.ico">
+        <!-- Core Style CSS -->
+        <link rel="stylesheet" href="css/core-style.css">
+        <link rel="stylesheet" href="css/mio.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    </head>
+    
+    <body >
+        <!-- ##### Header Area Start ##### -->
+        <header class="header_area">
+            <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar" style="height: 60px;" id="essenceNav">
+                    <!-- Logo -->
+                    <a class="nav-brand" href="index.html" style="width: 153px; height: 49px;" >
+                        <img src="img/core-img/directotomato.png" alt=""></a>
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+                    <!-- Menu -->
+                    <div class="classy-menu" >
+                        
+                        <!-- Nav Start -->
+                        <div class="classynav" style="padding-top:0px" >
+                            <ul>
+                                <li><a href="catalago.html">catalago</a>
+                                    
+                                </li>
+                                <li><a href="#">Registro</a>
+                                    <ul class="dropdown">
+                                        <li><a href="registroempresa.html">Empresa</a></li>
+                                        <li><a href="registrousuario.html">Cliente</a></li>
+                                        <li><a href="registroadmin.html">Administrador</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="registrate.html">login</a></li>
+                                <li><a href="acercade.html">Acerca de</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+    
+                <!-- Header Meta Data mantiene la altura del encabezado-->
+                <div class="header-meta d-flex clearfix justify-content-end">
+                </div>
+    
+            </div>
+        </header>
+    
+        <!-- ##### Right Side Cart Area ##### -->
+        <div class="cart-bg-overlay"></div>
+    
+        <div class="right-side-cart-area">
+    
+            <!-- Cart Button -->
+            <div class="cart-button">
+                <a href="#" id="rightSideCart"><img src="img/core-img/bag4.svg" alt=""> <span>3</span></a>
+            </div>
+    
+            <div class="cart-content d-flex">
+    
+                <!-- Cart List Area -->
+                <div class="cart-list">
+                    <!-- Single Cart Item -->
+                    <div class="single-cart-item">
+                        <a href="#" class="product-image">
+                            <img src="img/product-img/1.jpg" class="cart-thumb" alt="">
+                            <!-- Cart Item Desc -->
+                            <div class="cart-item-desc">
+                              <span class="product-remove"><i class="fa fa-close" aria-hidden="true"></i></span>
+                                <span class="badge">Mango</span>
+                                <h6>Button Through Strap Mini Dress</h6>
+                                <p class="size">Size: S</p>
+                                <p class="color">Color: Red</p>
+                                <p class="price">$45.00</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- Single Cart Item -->
+                    <div class="single-cart-item">
+                        <a href="#" class="product-image">
+                            <img src="img/product-img/2.jpg" class="cart-thumb" alt="">
+                            <!-- Cart Item Desc -->
+                            <div class="cart-item-desc">
+                              <span class="product-remove"><i class="fa fa-close" aria-hidden="true"></i></span>
+                                <span class="badge">Mango</span>
+                                <h6>Button Through Strap Mini Dress</h6>
+                                <p class="size">Size: S</p>
+                                <p class="color">Color: Red</p>
+                                <p class="price">$45.00</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- Single Cart Item -->
+                    <div class="single-cart-item">
+                        <a href="#" class="product-image">
+                            <img src="img/product-img/3.jpg" class="cart-thumb" alt="">
+                            <!-- Cart Item Desc -->
+                            <div class="cart-item-desc">
+                              <span class="product-remove"><i class="fa fa-close" aria-hidden="true"></i></span>
+                                <span class="badge">Mango</span>
+                                <h6>Button Through Strap Mini Dress</h6>
+                                <p class="size">Size: S</p>
+                                <p class="color">Color: Red</p>
+                                <p class="price">$45.00</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Cart Summary -->
+                <div class="cart-amount-summary">
+    
+                    <h2>Summary</h2>
+                    <ul class="summary-table">
+                        <li><span>subtotal:</span> <span>$274.00</span></li>
+                        <li><span>delivery:</span> <span>Free</span></li>
+                        <li><span>discount:</span> <span>-15%</span></li>
+                        <li><span>total:</span> <span>$232.00</span></li>
+                    </ul>
+                    <div class="checkout-btn mt-100">
+                        <a href="simulacomp.html" class="btn essence-btn">check out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- el mapa y la decripcion lo mas importante de la pagina -->
+    <div class="contact-area d-flex align-items-center">
+            <div id="mapid" style="width: 750px; height: 440px;"></div>
+            <script>
+            
+                var mymap = L.map('mapid').setView([14.098296, -87.203829], 15);
+            
+                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    maxZoom: 18,
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    id: 'mapbox.streets'
+                }).addTo(mymap);
+            
+                L.marker([14.098296, -87.203829]).addTo(mymap)
+                    .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+                var popup = L.popup();
+            
+                function onMapClick(e) {
+                    popup
+                        .setLatLng(e.latlng)
+                        .setContent("You clicked the map at " + e.latlng.toString())
+                        .openOn(mymap);
+                }
+            
+                mymap.on('click', onMapClick);
+            
+            </script>
+        <div class="contact-info">
+            <h2>Aqui puedes encontrarme</h2>
+            <p>somos una empresa de cremas de comida de dulces de lo q sea</p>
+            <p> direccion se genera en registro y la manda aqui.y deberia de registrarse en el mapa</p>
+
+            <div class="contact-address mt-50">
+                <p><span>address:</span> 10 Suffolk st Soho, London, UK</p>
+                <p><span>telephone:</span> +92661954</p>
+                <p><a href="https://mail.yahoo.com">contact@tuimail.com</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!--Footer Area  -->
+    <footer class="footer_area clearfix">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Widget Area -->
+                    <div class="col-12 text-center">
+                        <div class="single_widget_area d-flex mb-30">
+                            <!-- Logo -->
+                            <div class="footer-logo mr-50">
+                                <a href="#"><img style="width: 153px; height: 49px;" src="img/core-img/directotomato.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row align-items-end">
+    
+                    <!-- Single Widget Area -->
+                    <div class="col-12  text-center">
+                        <div class="single_widget_area">
+                            <div class="footer_social_area">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-5">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Cinthya cabrera</p>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+        
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Classy Nav js -->
+    <script src="js/classy-nav.min.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Google Maps -->
+   <script src="js/map-active.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<?php
+
+include_once('../backend/class/class-usuario.php');
+require_once('../backend/class/class-database.php');
+$database = new Database();
+if (!Usuario::verificarAutenticacion($database->getDB()))
+ header("Location: error.html");
+
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Daffodil</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Dashboard </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="css/mio.css">
+ <header class="header_area">
+    <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar" style="height: 60px;" id="essenceNav">
+            <!-- Logo -->
+            <a class="nav-brand" href="index.html" style="padding-left:5px; margin-right: 70px">
+                <img src="img/core-img/directotomato.png" style="height: 50px; widows: 150px;" alt=""></a>
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+                <span class="navbarToggler"></span>
+            </div>
+            <!-- Menu -->
+            <div class="classy-menu" >
+                
+                <!-- Nav Start -->
+                <div class="classynav" style="padding-top:0px" >
+                    <ul>
+                        <li><a href="catalago.html">catalago</a>
+                            
+                        </li>
+                        <li><a href="#">Registro</a>
+                            <ul class="dropdown">
+                                <li><a href="registroempresa.html">Empresa</a></li>
+                                <li><a href="registrate.html">Cliente</a></li>
+                                <li><a href="registrate.html">Administrador</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="registrate.html">login</a></li>
+                        <li><a href="acercade.html">Acerca de</a></li>
+                    </ul>
+                </div>
+                <!-- Nav End -->
+            </div>
+        </nav>
+
+        <!-- Header Meta Data -->
+        <div class="header-meta d-flex clearfix justify-content-end">
+            <!-- Search Area -->
+            <div class="search-area">
+                <form action="#" method="post">
+                    <input type="search" name="search" id="headerSearch" placeholder="Type for search">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <!-- Favourite Area -->
+            <div class="favourite-area"><a href="#"><img src="img/core-img/heart1.svg" alt=""></a></div>
+            <!-- User Login Info -->
+            <div class="user-login-info">
+                <a href="../backend/ajax/usuarios/?accion=logout" data-toggle="tooltip" data-placement="top" title="cerrar sesion" aria-hidden="true">
+                <img src="img/core-img/user2.svg" alt=""></a>
+            </div>
+            <!-- Cart Area -->
+            <div class="cart-area"><a href="#" id="essenceCartBtn"><img src="img/core-img/bag4.svg" alt=""> <span>3</span></a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<body>
+  <div class="container col-md-12 col-lg-12 align-items-center">
+    
+        <main role="main" class="col-md-12   col-lg-12 pt-3 px-4 ">
+          
+          <div class="row col-12">
+             <div class="card col-md-12 col-lg-5 col-sm-12" style="padding:10px; margin:10px">
+                  <div class="card-body">
+                      <h4 class="card-title">Latest Posts</h4>
+                  </div>
+                  <div class="comment-widgets scrollable">
+                          <hr>
+                         
+                      <!-- Comment Row -->
+                      <div id="colorcito" class="d-flex flex-row comment-row" style="text-align:left">
+                          <div class="p-4 col-2"><img src="img/core-img/user2.svg" alt="user" width="50" class="rounded-circle"></div>
+                          <div class="comment-text w-100 col-10" >
+                              <h6 class="font-medium" >James Anderson</h6>
+                              <span class="m-b-15 d-block" >Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                              <div class="comment-footer">
+                                  <span class="text-muted float-right">April 14, 2016</span> 
+                                  <button type="button" class="btn btn-cyan btn-sm">Edit</button>
+                                  <button type="button" class="btn btn-success btn-sm">Publish</button>
+                                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                              </div>
+                          </div>
+                      </div>
+                     
+                      <!-- Comment Row -->
+                      <div id="colorcito" class="d-flex flex-row comment-row" style="text-align:left">
+                              <div class="p-4 col-2"><img src="img/core-img/user2.svg" alt="user" width="50" class="rounded-circle"></div>
+                              <div class="comment-text w-100 col-10" >
+                                  <h6 class="font-medium" >James Anderson</h6>
+                                  <span class="m-b-15 d-block" >Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                  <div class="comment-footer">
+                                      <span class="text-muted float-right">April 14, 2016</span> 
+                                      <button type="button" class="btn btn-cyan btn-sm">Edit</button>
+                                      <button type="button" class="btn btn-success btn-sm">Publish</button>
+                                      <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+
+         
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+ <!--Footer Area  -->
+    <footer class="footer_area clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Single Widget Area -->
+                <div class="col-12 text-center">
+                    <div class="single_widget_area d-flex mb-30">
+                        <!-- Logo -->
+                        <div class="footer-logo mr-50">
+                            <a href="index.html"><img style="width: 153px; height: 49px;" src="img/core-img/directotomato.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-end">
+
+                <!-- Single Widget Area -->
+                <div class="col-12  text-center">
+                    <div class="single_widget_area">
+                        <div class="footer_social_area">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Cinthya cabrera</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+  </body>
+</html>
